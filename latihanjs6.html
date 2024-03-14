@@ -11,12 +11,12 @@
       let no, warna;
       for(no=1; no<=20; no++){
         warna = (no % 2 == 0 ) ? 'yellow' : 'blue';
-        document.write(` <tr bgcolor="$(warna)">
-        <td>$(no)</td>
-        <td> Mahasiswa $(no) </td>
-        <td> Kecamatam Bogor $(no) </td>
-        </tr> `
-        );
+        document.write(` <tr bgcolor="${warna}">
+        <td>${no}</td>
+        <td> Mahasiswa ${no} </td>
+        <td> Kecamatam Bogor ${no} </td>
+        </tr> 
+        `);
       }
     </script>
   </tbody>
