@@ -1,0 +1,29 @@
+<script>
+//deklarasi Array
+//array dimulai dari index 0
+  var buah =['Pepaya', 'Mangga', 'Pisang', 'Jambu'];
+  //mengaganti index [2]
+  buah[2] = 'Jeruk';
+  
+  for(var i=0; i < buah.length; i++){
+    document.write("<br> " + buah[i]);
+  }
+</script>
+<script>
+  //array Object
+let p1 = {'nama' : 'Manda', 'divisi' : 'SDM', 'gaji' : 70000000};
+let p2 = {'nama' : 'Sarmila', 'divisi' : 'Marketing', 'gaji' : 80000000};
+let p3 = {'nama' : 'Mayang', 'divisi' : 'Lapangan', 'gaji' : 90000000};
+
+let pegawai = [p1,p2,p3];
+for(let i =0; i < pegawai.length; i++){
+  document.write("<br> " + pegawai[i]);
+}
+
+for (p of pegawai){
+  document.write("<br> " + p.nama);
+  document.write("<br> " + p.divisi);
+  document.write("<br> " + p.gaji);
+}
+
+</script>
