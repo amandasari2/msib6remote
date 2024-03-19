@@ -1,0 +1,37 @@
+<script>
+    class Bank{
+        // Constructor adalah method untuk mendeklarasikan variable 
+        // Yang nantinya akan diambil oleh object
+        constructor(norek,nasabah,saldo){
+            this.no = norek;
+            this.nama = nasabah;
+            this.saldo = saldo;
+        }
+        menabung(uang){
+            this.saldo += uang;
+        }
+
+        menarik(uang){
+            this.saldo -= uang;
+        }
+
+        mencetak(){
+            document.write('No. Rekening : ', this.no);
+            document.write('<br> Nama Nasabah : ', this.nama);
+            document.write('<br> Saldo Akhir : ', this.saldo);
+            document.write('<br> --------------------------- </br>');
+        }
+    }
+
+    // Ini adalah object
+    let n1 = new Bank('0111', 'Manda', 500000);
+    let n2 = new Bank('0222', 'Mayang', 600000);
+
+    n1.mencetak();
+    n1.menabung(2000000);
+    n1.mencetak();
+
+    n2.mencetak();
+    n2.menarik(250000);
+    n2.mencetak();
+</script>
